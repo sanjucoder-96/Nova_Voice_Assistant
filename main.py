@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import pyttsx3 #python text to speech
 import sysop
+import sys
 import webbrowser
 import requests
 import musiclibrary
@@ -29,7 +30,7 @@ def process_command(c):
         webbrowser.open("https://youtube.com")
     elif "stop listening" in c_lower:
         speak("Goodbye sir.")
-        sysop.exit(0)
+        sys.exit()
     elif "open facebook" in c_lower:
         webbrowser.open("https://facebook.com")
     elif "open linkedin" in c_lower:
