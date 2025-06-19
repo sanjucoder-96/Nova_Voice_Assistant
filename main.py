@@ -15,6 +15,8 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)  # Change index as needed
 engine.setProperty('rate', 160)
 engine.setProperty('volume', 1.0)
+newsapi = os.getenv("NEWSAPI_KEY")
+
 def speak(text):
     engine.say(text)
     engine.runAndWait()
