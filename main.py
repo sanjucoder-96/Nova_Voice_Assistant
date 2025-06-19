@@ -18,7 +18,6 @@ engine.setProperty('volume', 1.0)
 def speak(text):
     engine.say(text)
     engine.runAndWait()
-newsapi = "a0787f8dd0ec497cb52cd010493be1b4"
 
 def process_command(c):
     print(f"Processing: {c}")
